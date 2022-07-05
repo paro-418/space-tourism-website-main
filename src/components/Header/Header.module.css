@@ -1,0 +1,72 @@
+.header {
+  background-color: transparent;
+  color: white;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.logo {
+  margin-left: 2rem;
+}
+.btnDiv {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.btnDiv::after {
+  content: "";
+  width: 60%;
+  height: 1%;
+  border: 0.1rem solid #222;
+  position: absolute;
+  left: -50%;
+}
+
+.btnUl {
+  height: 100%;
+  display: flex;
+  flex-basis: 80%;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.btn {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  bottom: -1.2rem;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.25s;
+}
+
+.btn:hover:after,
+.btn:focus-within:after {
+  opacity: 1;
+}

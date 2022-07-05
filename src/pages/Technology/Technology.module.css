@@ -1,0 +1,8 @@
+.technology{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-image: url("../../starter-code/assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
