@@ -9,18 +9,24 @@ const Header = () => {
       <nav className={classes.btnDiv}>
         <ul className={classes.btnUl}>
           <li>
-            <NavLink to="/home" className={classes.btn}>
+            <NavLink
+              to="/space-tourism-website-main/home"
+              className={classes.btn}
+            >
               00 home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/destination" className={classes.btn}>
+            <NavLink
+              to="/space-tourism-website-main/destination"
+              className={classes.btn}
+            >
               01 destination
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/crew"
+              to="/space-tourism-website-main/crew"
               className={classes.btn}
               activeClassName={classes.btn}
             >
@@ -28,7 +34,10 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/technology" className={classes.btn}>
+            <NavLink
+              to="/space-tourism-website-main/technology"
+              className={classes.btn}
+            >
               03 technology
             </NavLink>
           </li>
