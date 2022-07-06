@@ -15,7 +15,6 @@ const photos = [
   { name: "europa", image: europa },
 ];
 const planets = data.destinations;
-console.log(planets);
 
 const Destination = () => {
   const [currentPlanet, setCurrentPlanet] = useState("mars");
@@ -24,7 +23,6 @@ const Destination = () => {
   const currentShowing = planets.filter(
     (obj) => obj.name.toLowerCase() === currentPlanet
   );
-  // const currentTravelTime = planets.filter(obj.name)
   const btnValueHandler = (event) => {
     setCurrentPlanet(event.target.value);
   };
@@ -46,7 +44,7 @@ const Destination = () => {
                   <Button
                     callFunction={btnValueHandler}
                     value={obj.name}
-                    className={classes.btn}
+                    className={`${classes.btn} ${classes.selected}`}
                   >
                     {obj.name}
                   </Button>
