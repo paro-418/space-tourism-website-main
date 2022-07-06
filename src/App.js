@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="https://paro-810.github.io/space-tourism-website-main/" exact>
-          <Redirect to="paro-810.github.io/space-tourism-website-main/home"></Redirect>
+          <Redirect to="https://paro-810.github.io/space-tourism-website-main/home"></Redirect>
         </Route>
 
         <Route path="https://paro-810.github.io/space-tourism-website-main/home">
