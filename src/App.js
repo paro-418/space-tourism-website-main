@@ -10,23 +10,23 @@ function App() {
     <main className={classes.main}>
       <Header />
       <Switch>
-        <Route path="/" exact>
-          <Redirect to="/home"></Redirect>
+        <Route path="paro-810.github.io/space-tourism-website-main/" exact>
+          <Redirect to="paro-810.github.io/space-tourism-website-main/home"></Redirect>
         </Route>
 
-        <Route path="/home">
+        <Route path="paro-810.github.io/space-tourism-website-main/home">
           <Home />
         </Route>
 
-        <Route path="/destination">
+        <Route path="paro-810.github.io/space-tourism-website-main/destination">
           <Destination />
         </Route>
 
-        <Route path="/crew">
+        <Route path="paro-810.github.io/space-tourism-website-main/crew">
           <Crew />
         </Route>
 
-        <Route path="/technology">
+        <Route path="paro-810.github.io/space-tourism-website-main/technology">
           <Technology />
         </Route>
 
