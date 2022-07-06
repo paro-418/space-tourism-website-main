@@ -1,6 +1,7 @@
 import BodyPart from "../../components/bodypart/BodyPart";
 import Button from "../../components/Button/Button";
 import classes from "./Home.module.css";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -17,7 +18,9 @@ const Home = () => {
           </p>
         </div>
         <div className={classes.right}>
-          <Button className={classes.explore}>Explore</Button>
+          <NavLink to="/destination">
+            <Button className={classes.explore}>Explore</Button>
+          </NavLink>
         </div>
       </BodyPart>
     </main>

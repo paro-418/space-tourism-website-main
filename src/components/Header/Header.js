@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <img src={logo} className={classes.logo} />
-      <div className={classes.btnDiv}>
+      <nav className={classes.btnDiv}>
         <ul className={classes.btnUl}>
           <li>
             <NavLink to="/home" className={classes.btn}>
@@ -33,7 +33,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
   );
 };

@@ -1,11 +1,114 @@
 .destination {
   width: 100vw;
   height: 100vh;
-  color: white;
+  color: rgb(187, 187, 187);
   background-image: url("../../starter-code/assets/destination/background-destination-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-      display: flex;
-    flex-direction: column;
-    justify-content: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+  padding: 3rem;
+}
+
+.subHeading {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-left: 20%;
+  font-weight: 400;
+}
+
+.imgContainer {
+  width: 70%;
+  margin-left: 30%;
+  margin-top: 10%;
+  height: 70%;
+}
+
+.imgContainer img {
+  height: 100%;
+}
+
+.right {
+  padding-right: 11.5rem;
+  padding-top: 7rem;
+}
+
+.btnUl {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.btnLi {
+  list-style: none;
+}
+.btn {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  position: relative;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  bottom: -0.6rem;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.25s;
+}
+
+.btn:hover:after,
+.btn:focus-within:after {
+  opacity: 1;
+}
+
+.btnUl {
+  display: flex;
+}
+
+.planetName {
+  font-size: 5rem;
+  font-family: "Crimson Text", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  color: #fff;
+}
+
+.planetDescription {
+  font-family: "Oswald", sans-serif;
+  word-spacing: 0.1rem;
+  line-height: 1.5rem;
+}
+
+.disTime {
+  border-top: 2px solid #666;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  display: flex;
+  column-gap: 2rem;
+  padding-top: 1rem;
+}
+
+.h5 {
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+
+.disTime p {
+  font-family: "Crimson Text", serif;
 }

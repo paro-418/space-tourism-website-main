@@ -54,7 +54,7 @@
   cursor: pointer;
 }
 
-.btn:after {
+.btn::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -66,7 +66,7 @@
   transition: all 0.25s;
 }
 
-.btn:hover:after,
+.btn:hover::after,
 .btn:focus-within:after {
   opacity: 1;
 }

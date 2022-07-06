@@ -1,9 +1,9 @@
 import classes from "./BodyPart.module.css"
 
 const BodyPart = (props) => {
-    return <main className={`${classes.bodyPart} ${props.className}`}>
+    return <article className={`${classes.bodyPart} ${props.className}`}>
         {props.children}
-    </main>
+    </article>
 }
 
 export default BodyPart;
