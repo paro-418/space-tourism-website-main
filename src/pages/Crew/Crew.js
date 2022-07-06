@@ -15,10 +15,8 @@ const photos = [
 ];
 
 const crewMembers = data.crew;
-console.log(crewMembers);
 const Crew = () => {
   const [currentCrew, setCurrentCrew] = useState("Anousheh Ansari");
-  console.log(currentCrew);
 
   const crewChangeHandler = (event) => {
     setCurrentCrew(event.target.value);
@@ -28,7 +26,6 @@ const Crew = () => {
   const showCrew = crewMembers.filter((obj) =>
     obj.name.toLowerCase().includes(currentCrew.toLowerCase())
   );
-  console.log(showCrew);
 
   return (
     <main className={classes.crew}>
